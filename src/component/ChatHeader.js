@@ -6,7 +6,8 @@ import { COLORS } from '../Styles/Color';
 const ChatHeader = (props) => {
     const { data } = props;
     // const [lastSeen, setlastSeen] = useState('')
-    
+    console.log(props)
+    const dummy = data
     return (
         <View style={styles.container}>
             <StatusBar barStyle="light-content" backgroundColor={COLORS.theme} translucent={false} />
