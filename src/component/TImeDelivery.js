@@ -26,6 +26,11 @@ const TimeDelivery = (props) => {
                     type = "Ionicons"
                     style={{color: item.seen ? COLORS.black : COLORS.white , fontSize: 15, marginLeft: 5}}
                 />
+                {/* <Icon
+                    name = {"checkmark-done"}
+                    type = "Ionicons"
+                    style={{color: item.seen ? COLORS.black : COLORS.white , fontSize: 15, marginLeft: 5}}
+                /> */}
 
         </View>
     );
