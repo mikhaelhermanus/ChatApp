@@ -7,6 +7,7 @@ import { COLORS } from '../Styles/Color';
 
 // create a component
 const TimeDelivery = (props) => {
+    const text = ''
     const { sender, item } = props;
     return (
         <View
