@@ -2,41 +2,22 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, StatusBar } from 'react-native';
 import { COLORS } from '../Styles/Color';
-import { FONTS } from '../Constant/Font';
-import { Icon } from 'native-base';
-
 // create a component
 const ChatHeader = (props) => {
     const { data } = props;
-    // console.log("cht saa",data);
-
     const [lastSeen, setlastSeen] = useState('')
-
     return (
         <View style={styles.container}>
-
             <StatusBar barStyle="light-content" backgroundColor={COLORS.theme} translucent={false} />
-            {/* <Text>back</Text> */}
-            {/* <Icon
-                style={{
-                    marginHorizontal: 10,
-                    color: COLORS.white,
-                }}
-                name = "chevron-back"
-                type = "Ionicons"
-                // onPress = {() => Navigation.back()}
-            />
-           */}
-
-            <View 
-                style={{flex:1, marginLeft: 10}}
+            <View
+                style={{ flex: 1, marginLeft: 10 }}
             >
                 <Text
                     numberOfLines={1}
                     style={{
                         color: COLORS.white,
                         fontSize: 16,
-                        textTransform:'capitalize'
+                        textTransform: 'capitalize'
                     }}
                 >
                     {data.name}
@@ -48,16 +29,6 @@ const ChatHeader = (props) => {
                     {lastSeen}
                 </Text> */}
             </View>
-
-            {/* <Icon
-                style={{
-                    marginHorizontal: 10,
-                    color: COLORS.themeColor
-                }}
-                name="videocam-outline"
-                type="Ionicons"
-            /> */}
-
         </View>
     );
 };
@@ -65,11 +36,11 @@ const ChatHeader = (props) => {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-        height:70,
+        height: 70,
         backgroundColor: COLORS.theme,
         elevation: 5,
         flexDirection: 'row',
-        alignItems:'center',
+        alignItems: 'center',
 
     },
 });
