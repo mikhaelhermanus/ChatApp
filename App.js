@@ -9,7 +9,7 @@ import Register from './src/screen/Auth/Register'
 import DashboardUser from './src/screen/Chat/DashboardUser';
 import { NativeBaseProvider } from 'native-base';
 const Stack = createStackNavigator()
-//testing sonar cloud
+//testing sonar cloud - demo !!!
 export default function App() {
   return (
     <NativeBaseProvider>
